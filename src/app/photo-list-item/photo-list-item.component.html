@@ -1,0 +1,15 @@
+<ion-item>
+  <ion-thumbnail item-left>
+    <div class="thumbnail-image"
+        [ngStyle]="{'background-image': 'url(' + photo.url + ')'}">
+    </div>
+  </ion-thumbnail>
+  <button ion-button clear icon-only item-right color="secondary"
+      (click)="toggleStar($event)">
+    <ion-icon *ngIf="photo.starred" name="star"></ion-icon>
+    <ion-icon *ngIf="!photo.starred" name="star-outline"></ion-icon>
+  </button>
+  <h2>{{ photo.title }}</h2>
+  <p>{{ photo.created | date:'dd MMMM yyyy, HH:mm' }}</p>
+  <p>{{ photo.description }}</p>
+</ion-item>

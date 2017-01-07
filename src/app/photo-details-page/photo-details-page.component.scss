@@ -1,0 +1,21 @@
+photo-details-page {
+  .card-header {
+    font-size: 3rem;
+  }
+
+  .description {
+    white-space: pre-line;
+  }
+
+  .error {
+    text-align: center;
+    font-size: 2rem;
+    color: map-get($colors, 'danger');
+    margin-top: 15vw;
+  }
+
+  .button-text {
+    font-size: 1.2em;
+    margin-left: 0.6em;
+  }
+}
